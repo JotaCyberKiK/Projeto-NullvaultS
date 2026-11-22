@@ -266,7 +266,7 @@ A documentação descreve o programa em módulos lógicos dentro do arquivo prin
 
 ## 🐧 Instalação do NullVouts via AppImage
 
-**Versão:** 0.1.0 — Experimental
+**Versão:** 0.0.2 — Experimental
 
 O NullVouts é um cofre criptográfico desenvolvido em Python, com interface gráfica Tkinter e criptografia AES-256-GCM.
 
