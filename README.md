@@ -127,67 +127,6 @@ De acordo com a arquitetura documentada, o fluxo de abertura é aproximadamente 
 
 A descrição original menciona também **HMAC-SHA256**, *salts* aleatórios e campos autenticados no cabeçalho. Os detalhes exatos da combinação de fatores, da derivação de chaves e da serialização **devem ser confirmados no código da versão publicada**.
 
-## Requisitos e instalação
-
-### Requisitos
-
-- **Python 3.10 ou superior**.
-- Biblioteca Python [`cryptography`](https://pypi.org/project/cryptography/).
-- **Tkinter** para usar a interface gráfica.
-- **Windows ou Linux**, com diferenças nas proteções disponíveis.
-- Memória compatível com o custo de Scrypt configurado.
-
-### Obter o código
-
-```bash
-git clone https://github.com/JotaCyberKiK/Projeto-Nullvault.git
-cd Projeto-Nullvault
-```
-
-> Se o repositório estiver **privado**, o comando `git clone` exigirá autenticação de uma conta com permissão de acesso.
-
-### Windows 10/11 — PowerShell
-
-Execute os comandos na pasta do projeto:
-
-```powershell
-py -3 -m venv .venv
-.\.venv\Scripts\python.exe -m pip install cryptography
-.\.venv\Scripts\python.exe .\Nullvouts.py
-```
-
-Os comandos utilizam diretamente o Python do ambiente virtual, **sem exigir a ativação de scripts do PowerShell**.
-
-### Linux — Ubuntu/Debian
-
-```bash
-sudo apt update
-sudo apt install python3 python3-venv python3-tk
-python3 -m venv .venv
-./.venv/bin/python -m pip install cryptography
-./.venv/bin/python Nullvouts.py
-```
-
-Outras distribuições podem utilizar gerenciadores de pacotes e nomes de pacotes diferentes.
-
-### Modo terminal
-
-**Windows:**
-
-```powershell
-.\.venv\Scripts\python.exe .\Nullvouts.py --cli
-```
-
-**Linux:**
-
-```bash
-./.venv/bin/python Nullvouts.py --cli
-```
-
-Use um terminal que permita ocultar a digitação das senhas. A interface gráfica requer um ambiente com suporte a janelas.
-
-> **Nome do arquivo:** a documentação recebida identifica o programa principal como `Nullvouts.py`. O nome foi **mantido intencionalmente**, pois não é possível concluir que seja um erro de digitação sem verificar o arquivo real no repositório.
-
 ## Como usar
 
 ### Criar o primeiro cofre
