@@ -263,6 +263,74 @@ A documentação descreve o programa em módulos lógicos dentro do arquivo prin
 - Bloqueio por tentativas e registro de auditoria.
 - Interface de terminal e interface Tkinter.
 
+
+## 🐧 Instalação do NullVouts via AppImage
+
+**Versão:** 0.1.0 — Experimental
+
+O NullVouts é um cofre criptográfico desenvolvido em Python, com interface gráfica Tkinter e criptografia AES-256-GCM.
+
+Esta versão AppImage foi testada no Debian Linux. Ela ainda depende de bibliotecas instaladas no sistema e não teve sua compatibilidade confirmada com todas as distribuições.
+
+### 1. Instalar as dependências
+
+Escolha o comando correspondente à sua distribuição Linux.
+
+#### Debian, Ubuntu, Linux Mint e derivados
+
+```bash
+sudo apt update
+sudo apt install python3 python3-tk python3-cryptography
+```
+
+#### Manjaro e Arch Linux
+
+```bash
+sudo pacman -S --needed python tk python-cryptography
+```
+
+#### Fedora Linux
+
+```bash
+sudo dnf install python3 python3-tkinter python3-cryptography
+```
+
+### 2. Verificar as dependências
+
+Execute no terminal:
+
+```bash
+python3 -c "import tkinter, cryptography; print('Dependências instaladas com sucesso!')"
+```
+
+Se a mensagem de sucesso aparecer, as bibliotecas necessárias foram encontradas.
+
+### 3. Executar o NullVouts
+
+Baixe o arquivo `NullVouts-0.1.0-x86_64.AppImage` na seção Releases do repositório.
+
+Abra o terminal na pasta onde o arquivo foi salvo e execute:
+
+```bash
+chmod +x NullVouts-0.1.0-x86_64.AppImage
+./NullVouts-0.1.0-x86_64.AppImage
+```
+
+### 4. Observações importantes
+
+- O AppImage foi testado no Debian Linux.
+- A instalação das dependências não garante compatibilidade com todas as distribuições.
+- Esta versão é experimental e ainda não contém todas as dependências incorporadas.
+- Recomenda-se realizar os primeiros testes usando cofres fictícios.
+- Mantenha backups seguros dos seus cofres antes de testar novas versões.
+
+**Projeto:** NullVouts  
+**Plataforma:** Linux x86-64  
+**Formato:** AppImage
+
+
+
+
 ### Executar verificações locais
 
 Para instalar e executar o **Bandit** com um ambiente virtual já criado:
